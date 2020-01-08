@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Book List</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="container">
+		<div id="in">
+			<h1>Add Book</h1>
+			<form id="book-form">
+				<label for="title">Book Title</label>
+				<input type="text" name="b_title" id="title">
+				<label for="author">Book Author</label>
+				<input type="text" name="b_author" id="author">
+				<label for="isbn">ISBN</label>
+				<input type="text" name="isbn" id="isbn">
+				<input type="submit" value="Add to the list">
+			</form>
+		</div>
+		<div id="out">
+			<table>
+				<thead>
+					<tr class>
+						<th>Title</th> <th>Author</th> <th>ISBN</th> <th></th>
+					</tr>
+				</thead>
+				<tbody id="book-list"></tbody>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="app_IES6.js"></script>
+</body>
+</html>

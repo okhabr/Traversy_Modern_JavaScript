@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loan calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/7e4e620ad1.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container_xs container">
+		<section>
+		<h1>Loan Calculator</h1>
+		<form>
+			<div class="line">
+				<label for="amount" title=><i class="fas fa-dollar-sign"></i></label>
+				<input type="number" name="body" min="1" id="amount" placeholder="Amount in usd">
+			</div>
+			<div class="line">
+				<label for="percent"><i class="fas fa-percentage"></i></label>
+				<input type="number" name="percent" min="1" max="100" id="percent" placeholder="Percentage" />
+			</div>
+			<div class="line">
+				<label for="months"><i class="fas fa-hourglass-half"></i></label>
+				<input type="number" name="period" min="1" max="120" id="months" placeholder="Months to repay" />
+			</div>
+			<button id="calculate" type="submit">Calculate</button>
+		</form>
+		</section>
+		<img src="loading.gif" alt="loading_gif">
+		<section id="result_box">
+			<h2>Results</h2>
+			<ul>
+				<li class="calculation_line">Monthly payment: <span id="monthly_payment"></span> </li>
+				<li class="calculation_line">Total payment: <span id="total_payment"></span>   </li>
+				<li class="calculation_line">Total interest: <span id="total_interest"></span>  </li>
+			</ul>
+			<button id="reset" type="button">Reset</button>	
+		</section>
+	</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

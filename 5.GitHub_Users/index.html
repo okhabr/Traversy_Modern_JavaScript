@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Github Finder</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Github Finder</h1>
+	</header>
+	<main>
+		<div class="mobile container">
+			<div id="start" class="border">
+				<h2>Search Github Users</h2>
+				<p>Enter a username to find info abouth the user on Github</p>
+				<input type="text" name="search" id="search" placeholder="Github Username">
+			</div>
+
+			<div class="hidden border">
+
+				<div id="general">
+
+					<div id="left">
+						<div id="image"></div>
+						<a id="profile" href="#">View profile</a>
+					</div>
+
+					<div id="right">
+						<div id="circle_container">
+								<span></span>
+								<span></span> 
+								<span></span> 
+								<span></span> 
+						</div>
+
+						<div>
+							<ul>
+								<li>Company: <span id="company"></span></li>
+								<li>Website/blog: <span id="website"></span></li>
+								<li>Location: <span id="location"></span> </li>				
+								<li>Member since: <span id="start_date"> </span></li>							
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div id="repositories">
+					<h3>Latest Repositories</h3>
+					<ul>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>Github Finder</p>
+	</footer>
+
+<script type="text/javascript" src="github.js"></script>
+<script type="text/javascript" src="ui.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

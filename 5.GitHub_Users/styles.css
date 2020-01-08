@@ -1,0 +1,224 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #FFC608;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+h1, footer p{
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 70%;
+}
+ 
+
+/*INPUT AREA*/
+h2 {
+	font-size: 1.7rem;
+	margin-bottom: 8px;
+}
+
+#start p{
+	color: #B3AE9D;
+	font-size: 1.3rem;
+	margin: 5px 0;
+}
+
+input {
+	width: 100%;
+	border: 1px solid #B3AE9D;
+	border-radius: 5px;
+	outline: none;
+	height: 2rem;
+	font-size: 1rem;
+	padding: 10px;
+}
+
+input:focus {
+	background-color: #FFF2B7; 
+}
+
+
+/*OUTPUT AREA*/
+
+#general{
+	width: 100%;
+	display: flex;
+}
+
+#left {
+	 flex-basis: 30%;
+}
+
+#right {
+	flex-basis: 70%;
+	padding-left: 1rem;
+}
+
+/*TOP*/
+/*LEFT BOX*/
+#image {
+	width: 100%;
+	/* height: 271px; */
+	overflow: hidden;
+}
+img{
+	object-fit: cover;
+}
+
+#left a {
+	display: inline-block; 
+	text-align: center;
+	background-color: #FF6A00;
+	color: white;
+	font-size: 1rem;
+	padding: 5px 8px;
+	border: none;
+	border-radius: 8px;
+	margin-top: 8px;
+	width: 100%;
+	text-decoration: none;
+}
+
+/*RIGHT BOX*/
+#right div:first-child {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul li{
+	font-size: 1.2rem;
+	color: #000;
+	border-bottom: 1px solid #B3AE9D;
+	padding: 8px 0;
+
+}
+
+.circle {
+	text-align: center;
+	color: #000;
+	font-size: 0.8rem;
+	font-weight: bold;
+	padding: 9px 10px;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 8px;
+
+}
+
+/*THESE NICE CIRLES*/
+.blue{
+	background-color: #A3B8C8;
+}
+
+.green{
+	background-color: #80C388;
+}
+
+.yellow{
+	background-color: #FFF98C;
+}
+
+.grey{
+	background-color: #CFCEC2;
+
+}
+
+
+/*BOTTOM*/
+.rep_info{
+	float: right;
+}
+
+#repositories ul li{
+	height: 50px;
+	overflow: hidden;
+}
+
+.circle-bottom{
+	display: inline-block;
+	margin: 0 8px;
+	width: 120px;
+}
+
+#repositories ul li > span:first-child{
+	display: inline-block;
+	margin: 5px 0px;
+}
+
+/*ERROR*/
+.error {
+	background-color: rgba(226, 147, 147, 0.938);
+	color: darkred;
+	font-weight: 800;
+	text-align: center;
+	font-size: 1.2rem;
+}
+/*FOOTER*/
+footer{
+	background-color: #FFD340;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0;
+	padding: 0.5rem 0;
+
+}
+
+.border{
+	border: 1px solid #B3AE9D;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+/*A LITTLE BIT RESPONSIVE*/
+@media only screen and (max-width: 768px){
+	.container{
+		width: 90%;
+	}
+	#general{
+		flex-direction: column;
+	}
+	#profile {
+		margin-bottom: 10px;
+	}
+	#right {
+		padding-left: 0;
+	}
+	#repositories ul li .green, #repositories ul li .yellow{
+		display: none;
+	}
+}
+
+.hidden{
+	display: none;
+}
+
+img{
+	width:100%;
+	height: auto;
+}
