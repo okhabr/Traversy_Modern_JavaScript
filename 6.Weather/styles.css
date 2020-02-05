@@ -1,0 +1,103 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+main {
+	position: relative;
+}
+ul {
+	list-style: none;
+}
+.container {
+	width: 40%;
+	margin: 2% auto;
+	padding: 3%;
+	background-color: rgba(50, 106, 151, 0.5);
+	text-align: center;
+	border-radius: 5px;
+}
+.current-city {
+	color:white;
+	font-size: 2.5rem;
+	font-weight: 600;
+	padding: .5rem;
+}
+.general-weather{
+	font-size: 1.5rem;
+	padding: .2rem;
+}
+.degrees {
+	font-size: 1.4rem;
+	color: white;
+	font-weight: 500;
+	padding: .2rem;
+}
+.detailed-info {
+	margin: .5rem;
+	background-color: white;
+	font-size: 1.2rem;
+	color: rgba(75, 77, 77, 0.795);
+}
+
+.detailed-info li {
+	padding: 10px 0;
+}
+
+.btn{
+	display: inline-block;
+	margin: 20px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	color: white;
+	background-color: white;
+	color: rgba(75, 77, 77, 0.795);
+	transition: all .2s;
+	font-weight: 400;
+}
+
+.btn:hover {
+	transform: scale(1.05);
+	background-color: rgb(198, 221, 231);
+	cursor: pointer;
+}
+
+
+/*POP UP*/
+.change-city{
+	font-size: 1.2rem;
+	padding: 5px;
+	display: block;
+	border-radius: 6px;
+	border: 1px solid grey;
+	width: 90%;
+	margin: 40px auto;
+}
+.change-location {
+	position: absolute;
+	top: -27px;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(154, 176, 212, 0.925);
+}
+.hidden {
+	display: none;
+}
+
+.change-location .container{
+	background: white;
+}
+.change-location .btn{
+	background-color: rgba(154, 176, 212, 0.925);
+	color: white;
+}
+/* .btn:active{
+	outline: none;
+	border: none;
+}
+.btn:checked{
+	outline: none;
+	border: none;
+} */

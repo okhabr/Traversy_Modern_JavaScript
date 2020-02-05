@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 7,
+      "title": "P3",
+      "body": "This is post three"
+    },
+    {
+      "id": 8,
+      "title": " Post one ",
+      "body": "P1"
+    },
+    {
+      "title": "why women",
+      "body": "",
+      "id": 9
+    }
+  ]
+}

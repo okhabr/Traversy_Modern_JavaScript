@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Weather</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main>
+		<section class="container">
+			<div class="general-content">
+				<h1 class="current-city"></h1>
+				<p class="general-weather"></p>
+				<p class="degrees"></p>
+			</div>
+			<div class="detailed-info">
+				<ul>
+					<li id='max'></li>
+					<li id='min'></li>
+					<li id='wind'></li>
+					<li id='precipitation'></li>
+				</ul>
+			</div>
+			<button class="btn btn-change">Change Location</button>
+		</section>
+		<section class="change-location hidden">
+			<div class="container">
+				<h2>Choose Location</h2>
+				<form>
+					<input type="text" class='change-city' placeholder="Enter the city">
+					<button class="btn close">Close</button>
+					<button class="btn save">Save and go</button>
+				</form>
+				</div>
+		</section>
+	</main>
+	<script src="ui&weather.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

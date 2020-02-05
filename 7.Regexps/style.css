@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+input, label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+label {
+    padding: 10px 0px;
+}
+form {
+    width: 50%;
+    margin: 10px auto;
+}
+.wrong::after{
+    content:'Please fill in correctly';
+    color: red;
+}
